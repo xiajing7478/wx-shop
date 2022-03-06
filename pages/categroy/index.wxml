@@ -1,2 +1,16 @@
-<!--pages/categroy/index.wxml-->
-<text>pages/categroy/index.wxml</text>
+<view>
+  <scroll-view
+    scroll-x="false"
+    scroll-y="false"
+    upper-threshold="50"
+    lower-threshold="50"
+    scroll-top=""
+    scroll-top=""
+    scroll-into-view=""
+    bindscrolltoupper=""
+    bindscrolltolower=""
+    bindscroll=""
+  >
+    <view wx:for="{{ categroyList }}"> aaa </view>
+  </scroll-view>
+</view>
