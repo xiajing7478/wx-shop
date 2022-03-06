@@ -1,0 +1,9 @@
+<view>
+<button open-type="contact" type="primary">concat</button>
+<button open-type="share" type="primary">share</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="bindgetphonenumber" type="primary">getPhoneNumber</button>
+<button open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo" type="primary">getUserInfo</button>
+<button open-type="launchApp" type="primary">launchApp</button>
+<button open-type="openSetting" type="primary">openSetting</button>
+<button open-type="feedback" type="primary">feedback</button>
+</view>

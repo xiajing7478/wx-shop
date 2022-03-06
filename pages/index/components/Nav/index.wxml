@@ -1,0 +1,8 @@
+<!--components/nav/index.wxml-->
+<view class="nav-wrap">
+  <block wx:for="{{navList}}" wx:key="index">
+    <navigator class="navigator" open-type="{{item.open_type}}" url="{{item.navigator_url}}">
+      <image mode="widthFix" class="navigator-name" src="{{item.image_src}}" />
+    </navigator>
+  </block>
+</view>

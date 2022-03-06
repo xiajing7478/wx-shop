@@ -1,0 +1,10 @@
+/**index.wxss**/
+/* view {
+  color: var(--themeColor);
+} */
+.index-wrap .swiper-wrap swiper {
+  height: 340rpx;
+}
+.index-wrap .swiper-wrap swiper .swiper-image {
+  width: 100%;
+}

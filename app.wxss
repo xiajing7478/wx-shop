@@ -1,0 +1,15 @@
+/* 导入iconfont字体库 */
+@import "./styles/iconfont.wxss";
+
+/* 初始化全局样式 */
+page, view, text, swiper, swiper-item, image, navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 主题颜色 */
+page {
+  --themeColor: #eb4459;
+  font-size: 28rpx;
+}

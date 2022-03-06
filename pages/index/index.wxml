@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<view class="index-wrap">
+  <!-- 搜索框 开始 -->
+  <SearchInput></SearchInput>
+  <!-- 搜索框 结束 -->
+  <!-- 轮播图 开始 -->
+  <view class="swiper-wrap">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" 
+    duration="{{500}}">
+      <block wx:for="{{swiperList}}" wx:key="goods_id">
+        <swiper-item>
+          <navigator open-type="{{item.open_type || 'navigate'}}" url="{{item.navigator_url}}">
+            <image mode="widthFix" class="swiper-image" src="{{item.image_src}}" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 轮播图 结束 -->
+  <!-- 导航 开始 -->
+  <Nav navList="{{navList}}"></Nav>
+  <!-- 导航 结束 -->
+  <!-- 楼层 开始 -->
+  <Floors floorDataList="{{floorDataList}}"></Floors>
+  <!-- 楼层 结束 -->
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>this is my name</view>
+  <view wx:if="{{loading}}">正在加载</view>
+  <my-form myData="{{motto}}"></my-form>
+
+  <view>
+    <view wx:for="{{imgs}}" wx:key="*this">
+      <image src="{{item}}" />
+    </view>
+  </view>
+
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+      interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgs}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" class="swipe-item"/>
+          </swiper-item>
+        </block>
+    </swiper>
+  </view>
+</view> -->

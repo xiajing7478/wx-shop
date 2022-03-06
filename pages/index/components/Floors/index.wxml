@@ -1,0 +1,27 @@
+<!--pages/index/components/Floors/index.wxml-->
+<!-- <view class="floor-wrap">
+  <block wx:for="{{floorDataList}}" wx:key="*this">
+    <view class="floor-wrap-item">
+      <image mode="widthFix" class="floor-wrap-item-image-title" src="{{item.floor_title.image_src}}" />
+    </view>
+    <view class="floor-wrap-list" hover-class="none" hover-stop-propagation="false">
+      <navigator open-type="{{product.open_type}}" url="{{product.navigator_url}}" wx:for="{{item.product_list}}" wx:for-item="product" wx:for-index="i" wx:key="*this">
+        <image mode="widthFix" class="floor-wrap-item-image-list {{i === 0 ? 'big' : ''}}" src="{{product.image_src}}" />
+      </navigator>
+    </view>
+  </block>
+</view> -->
+
+<view class="index_floor">
+  <view class="floor_group" wx:for="{{floorDataList}}" wx:for-item="item1" 
+    wx:for-index="index1" wx:key="floor_title">
+    <view class="floor_title">
+      <image mode="widthFix" src="{{item1.floor_title.image_src}}" />        
+    </view>
+    <view class="floor_list">
+      <navigator wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="name">
+        <image mode="{{index2 ===0 ? 'widthFix' : 'scaleToFill'}}" src="{{item2.image_src}}" />
+      </navigator>
+    </view>
+  </view>
+</view>

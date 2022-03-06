@@ -1,0 +1,11 @@
+/* components/nav/index.wxss */
+.nav-wrap {
+  display: flex;
+}
+.nav-wrap .navigator {
+  padding: 20rpx;
+  flex: 1;
+}
+.nav-wrap .navigator-name {
+  width: 100%;
+}
