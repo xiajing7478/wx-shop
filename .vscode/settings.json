@@ -4,5 +4,8 @@
     "*.wxs": "javascript",
     "*.cjson": "jsonc",
     "*.wxml": "html"
+  },
+  "less.compile": {
+    "outExt": ".wxss"
   }
 }

@@ -1,1 +1,26 @@
-/* pages/categroy/index.wxss */
+.categroy_wrap {
+  position: relative;
+  display: flex;
+}
+.categroy_wrap .scroll_left {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categroy_wrap .scroll_left view {
+  text-align: center;
+  padding: 20rpx;
+}
+.categroy_wrap .scroll_right {
+  flex: 3;
+  height: 100vh;
+}
+.categroy_wrap .scroll_right .img_list {
+  float: left;
+  width: 25%;
+}
+.categroy_wrap .scroll_right .img_list image {
+  width: 100%;
+}

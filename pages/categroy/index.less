@@ -1,0 +1,29 @@
+.categroy_wrap {
+  position: relative;
+  display: flex;
+  .scroll_left {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    view {
+      text-align: center;
+      padding: 20rpx;
+    }
+  }
+  .scroll_right {
+    flex: 3;
+    height: 100vh;
+    &_title {
+    }
+    .img_list {
+      float: left;
+      // display: flex;
+      width: 25%;
+      image {
+        width: 100%;
+      }
+    }
+  }
+}
